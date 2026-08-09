@@ -17,6 +17,16 @@ void setup () {
 
   sum = data_1 + data_2; // Calculate the sum of data_1 and data_2
   Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
+  sum = data_1 - data_2; // Calculate the difference of data_1 and data_2
+  Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
+  sum = data_1 * data_2; // Calculate the product of data_1 and data_2
+  Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
+  sum = data_1 / data_2; // Calculate the quotient of data_1 and data_2
+  Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
+  sum = data_1 % data_2; // Calculate the remainder of data_1 divided by data_2
+  Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
+  sum = data_1 & data_2; // Calculate the bitwise AND of data_1 and data_2
+  Serial.print("Total Sum: "); Serial.println(sum); // Print the new sum
 
 }
 
