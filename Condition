@@ -1,0 +1,50 @@
+#include <Arduino.h> // Include the Arduino library for serial communication
+
+
+//if 
+//else if 
+//else
+//switch case
+
+int data = 1; // Declare an integer variable 'data' and initialize it to 10
+
+
+void setup () {
+  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  
+  Serial.println("Hello, World!"); // Print a message to the serial monitor
+
+  //if (data == 10) { // This condition is always true
+  //  Serial.println("true"); // Print another message
+  //}
+  
+  //else if (data == 9) { // This condition is also true
+  //  Serial.println("false 1"); // Print a different message
+  //}
+  
+  //else { // This block will not be executed
+    //Serial.println("false 2"); // Print a message
+  //}
+  
+  switch (data) { // Start a switch statement based on the value of 'data'
+    case 1: // If 'data' is 10
+      Serial.println("true"); // Print a message
+      break; // Exit the switch statement
+    
+      case 2: // If 'data' is 9
+      Serial.println("true"); // Print a different message
+      break; // Exit the switch statement
+    
+      default: // If 'data' does not match any case
+      Serial.println("false"); // Print a default message
+      break; // Exit the switch statement
+  }
+
+
+
+  Serial.println("Setup complete."); // Indicate that setup is complete
+}
+
+void loop () {
+  // Your main code here
+}
