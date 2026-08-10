@@ -1,0 +1,32 @@
+#include <Arduino.h> // Include the Arduino library for serial communication
+
+//Logical Operator
+//&& and
+//|| or
+//! not
+
+
+int data = 1; // Declare an integer variable 'data' and initialize it to 10
+
+
+void setup () {
+  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  
+  Serial.println("Hello, World!"); // Print a message to the serial monitor
+
+  if (!false) { // This condition is always true
+    Serial.println("true"); // Print another message
+  }
+  
+  else { // This block will not be executed
+    Serial.println("false "); // Print a message
+  }
+  
+
+
+  Serial.println("Setup complete."); // Indicate that setup is complete
+}
+
+void loop () {
+  // Your main code here
+}
