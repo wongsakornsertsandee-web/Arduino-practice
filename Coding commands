@@ -1,0 +1,51 @@
+#include <Arduino.h> // Include the Arduino library for serial communication
+
+// Coding commands 
+//delay()
+//pinmode()
+//digitalwrite() 0-13
+//digitalread()
+//analogwrite() A0-A5
+//analogread()
+
+
+int value = 1023; // Variable to store the value read from pin A0
+
+
+
+void setup () {
+  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  
+  Serial.println("Hello, World!"); // Print a message to the serial monitor
+
+  //pinMode(13, OUTPUT); // Set the built-in LED pin as an output
+  pinMode(12, INPUT); // Set pin 12 as an input   
+}
+
+void loop () {
+  // Your main code here
+
+  analogWrite(A0,value); // Write an analog value (PWM) to pin 0
+  
+
+  //value = analogRead(A0); // Read the value from analog pin A0
+  //Serial.print("Value read from A0: "); // Print a message to the serial monitor  
+  //Serial.println(value); // Print the value read from analog pin A0
+  
+  
+  //value = digitalRead(12); // Read the value from pin 12
+  //Serial.print("Value read from pin 12: "); // Print a message to the serial monitor
+  //Serial.println(value); // Print the value read from pin 12
+  
+
+  //digitalRead(13, HIGH); // Turn on the built-in LED
+  //Serial.println("LED is ON"); // Print a message to the serial monitor
+  ///delay(5000); // Wait for 1 second before repeating the loop
+  //digitalWrite(13, LOW); // Turn off the built-in LED
+  //Serial.println("LED is OFF"); // Print a message to the serial monitor
+  // Wait for 1 second before repeating the loop
+
+  Serial.print("Value : "); // Print a message to the serial monitor  
+  Serial.println(value); // Print the value read 
+  delay(3000);
+}
