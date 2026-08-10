@@ -1,0 +1,41 @@
+#include <Arduino.h> // Include the Arduino library for serial communication
+
+
+
+String print(String names) {
+ String Message = "Hello "+ names ; //
+  return Message; // Return the message as a String
+}
+
+
+
+//char print(int data) {
+  //if (data == 1) {
+    ///return 'a'; // Return 'a' if data is 1
+  //} else {
+    //return 'c'; // Return 'c' for any other value of data
+  //}
+//}
+
+//float print(float a, float b) {
+
+//  return a / b; // Return the sum of the two integers
+//}
+
+
+  
+void setup () {
+  Serial.begin(9600); // Initialize serial communication at 9600 baud rate
+  
+  Serial.println("Hello, World!"); // Print a message to the serial monitor
+  
+  Serial.print("sum: ");
+  Serial.println(print("Bom")); // Call the print function and print the result
+  
+}
+
+void loop () {
+  // Your main code here
+
+  
+}
